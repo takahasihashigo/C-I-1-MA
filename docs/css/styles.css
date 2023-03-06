@@ -10,6 +10,38 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/* fade-in parts start */
+.fade-in{
+  opacity: 0;
+}
+
+.left-to-right {
+  transition-duration: 1s;
+  transform: translate(-100px, 0px);
+}
+
+.right-to-left {
+  transition-duration: 1s;
+  transform: translate(100px, 0px);
+}
+
+.down {
+  transition-duration: 1s;
+  transform: translate(100px, 50px);
+}
+
+.up {
+  transition-duration: 1s;
+  transform: translate(100px, -50px);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* fade-in parts end */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -104,7 +136,7 @@ hr:not([size]) {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 4rem;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -7811,7 +7843,7 @@ textarea.form-control-lg {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 .text-decoration-none {
@@ -11567,7 +11599,7 @@ body {
   background: #fffff8
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .projects-section {
